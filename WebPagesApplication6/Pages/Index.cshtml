@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+
+@using Microsoft.AspNetCore.Mvc.RazorPages;
+
+@functions {
+
+	public class IndexModel: PageModel
+	{
+		public string HostName {get;set;}
+
+		public IActionResult OnGet()
+		{
+			HostName = Utility.Utils.GetHostName();
+
+			return Page();
+		}
+	}
+}
+
+<h1>Hello, ASP.NET Core Razor Page.</h1>
+<h2>My Local HostName is:@Model.HostName</h2>

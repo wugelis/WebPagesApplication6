@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/Gelis/.dotnet/store/|arch|/|tfm|",
+      "/Users/Gelis/.nuget/packages"
+    ]
+  }
+}
